@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Cadastro EBAC</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro EBAC</h1>
+    </header>
+    <main class="container">
+        <form id="formulario">
+            <h2>Formulario</h2>
+            <div class="container-formulario">
+                <label for="address">Endereço: </label>
+                <input type="text" id="address" name="address" placeholder="Endereço">
+            </div>
+            <div class="container-formulario">
+                <label for="telUser">Telefone: </label>
+                <input type="tel" id="telUser" name="telUser" placeholder="Telefone">
+            </div>
+            <div class="container-formulario">
+                <label for="emailUser">E-mail: </label>
+                <input type="email" id="emailUser" name="emailUser" placeholder="E-mail">
+            </div>
+            <div class="container-formulario">
+                <label for="nomeUser">Nome: </label>
+                <input type="text" id="nomeUser" name="nomeUser" placeholder="Nome completo">
+            </div>
+            <div class="container-formulario">
+                <label for="cepUser">Cep: </label>
+                <input type="text" id="cepUser" name="cepUser" placeholder="Cep" pattern="^\d{5}-?\d{3}$">
+            </div>
+            <div class="container-formulario">
+                <label for="cpfUser">Cpf: </label>
+                <input type="text" id="cpfUser" name="cpfUser" placeholder="Cpf" pattern="[0-9]*">
+            </div>
+            <div class="container-formulario">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>2023 &copy; Todos os direitos reservados</p>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./Plugins - JS/jquery.mask.min.js"></script>
+    <script src="./Plugins - JS/jquery.validate.min.js"></script>
+    <script src="./Plugins - JS/messages_pt_BR.min.js"></script>
+    <script src="./Plugins - JS/main.js"></script>
+</body>
+
+</html>
