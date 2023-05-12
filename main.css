@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -10,6 +10,14 @@ header {
     background-color: rgb(43, 73, 129);
     color: #fff;
     text-transform: uppercase;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
 }
 
 h2 {
@@ -22,27 +30,36 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: solid 1px black;
     padding: 30px;
+    height: 600px;
+    width: 350px;
+}
+
+.container-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 label {
     font-weight: bold;
-    display: block;
 }
 
 input {
-    width: 100%;
-    display:block;
+    width: 200px;
+    height: 40px;
     padding: 8px;
 }
 
 button {
-    display: block;
     width: 100%;
     padding: 8px 0;
     border: none;
@@ -51,7 +68,6 @@ button {
     font-style: italic;
     cursor: pointer;
     border-radius: 8px;
-    margin-top: 8px;
     background-color: rgb(0, 0, 0);
     color: #fff;
 }
@@ -61,13 +77,14 @@ button:hover {
 }
 
 footer {
-    text-align: center;
     background-color: rgb(43, 73, 129);
     color: #fff;
 }
 
-.error-message {
+
+label.error-message {
     color: red;
-    padding: 5px;
-    display: block;
+    font-size: 12px;
+    width: 100%;
+    text-align: end;
 }
